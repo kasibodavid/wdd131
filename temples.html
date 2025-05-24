@@ -1,86 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WDD 131 - Dynamic Web Fundamentals - Kasibo David</title>
-    <meta name="author" content="Kasibo David" />
-    <meta name="description" content="WDD 131- Dynamic Web Fundamentals - Kasibo David - Picture Album" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - Dynamic Web Fundamentals - Kasibo David</title>
+  <meta name="author" content="Kasibo David" />
+  <meta name="description" content="WDD 131 - Temple Album by Kasibo David" />
 
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script src="scripts/temples.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- <div class="navigation"> -->
-        <h1>Temple Album</h1>
+  <header>
+    <h1>Temple Album</h1>
+    <nav class="navigation">
+      <button id="menu" aria-label="Menu"></button>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav class="navigation">
-            <button id="menu" aria-label="Menu">
-            <!-- <h1>Temple Album</h1> -->
-            <!-- <button id="menu" aria-label="Menu" class="open"> -->
-                <!-- <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="close-icon">X</span> -->
-            </button>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
-        </ul>
+  <main>
+    <h2>Home</h2>
+    <section class="temples">
+      <figure>
+        <img src="images/temple1.jpg" alt="Kailasanathar Temple">
+        <figcaption>KAILASANATHAR TEMPLE - India</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="Borobudur Temple">
+        <figcaption>BOROBUDUR TEMPLE - Indonesia</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Temple of Heaven">
+        <figcaption>TEMPLE OF HEAVEN - China</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.jpg" alt="Karnak Temple">
+        <figcaption>KARNAK TEMPLE - Egypt</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.jpg" alt="Akshardham Temple">
+        <figcaption>AKSHARDHAM TEMPLE - India</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.jpg" alt="Angkor Wat Temple">
+        <figcaption>ANGKOR WAT TEMPLE - Cambodia</figcaption>
+      </figure>
+    </section>
+  </main>
 
-        </nav>
-    <!-- </div> -->
-    </header>
-    <main>
-        <!-- <section> -->
-        <h2>Home</h2>
-        <section class="temples">
-            <figure>
-                <img src="images/temple1.jpg" alt="kailasanathar temple">
-                <figcaption>KAILASANATHAR TEMPLE - India</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple2.jpg" alt="borobudur temple">
-                <figcaption>BOROBUDUR TEMPLE - Indonesia</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple3.jpg" alt="temple of heaven">
-                <figcaption>TEMPLE OF HEAVEN - China</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple4.jpg" alt="karnak temple">
-                <figcaption>KARNAK TEMPLE - Egypt</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple5.jpg" alt="akshardham temple">
-                <figcaption>AKSHARDHAM TEMPLE - India</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple6.jpg" alt="angkor wat temple">
-                <figcaption>ANGKOR WAT TEMPLE - Cambodia</figcaption>
-            </figure>
-        </section>
-        <!-- </section> -->
-    </main>
-    <footer>
-        <p>@
-            <span id="currentyear"></span>
-            | Kasibo David | NIGERIA
-        </p>
-        <p>Last Modified: 
-            <span id="lastModified"></span>
-        </p>
-    </footer>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Kasibo David | Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 
 </body>
-
 </html>
