@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - Dynamic Web Fundamentals - Kasibo David</title>
+  <meta name="author" content="Kasibo David" />
+  <meta name="description" content="WDD 131 - Country Page by Kasibo David" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+
+  <!-- JS -->
+  <script src="scripts/place.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Nigeria</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/nigeria-large.webp" media="(min-width: 768px)" />
+        <img src="images/nigeria-small.jpg" alt="Scenic view of Nigeria" />
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div>
+        <p>Temperature: <span id="temp">35</span> °F</p>
+        <p>Wind Speed: <span id="wind">5</span> mph</p>
+        <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+        <img src="images/cloudy.svg" alt="cloudy icon" class="weather-icon-mobile" />
+      </div>
+    </section>
+
+    <section class="data">
+      <h2>Data</h2>
+      <div>
+        <p>Area: <span id="area">923,768</span> km²</p>
+        <p>Population: <span id="population">223.8 million</span></p>
+        <p>Landmark: <span id="landmark">Abuja</span></p>
+        <p>Currency: <span id="currency">NGN Naira</span></p>
+        <p>Time Zone: <span id="time zone">GMT+1</span></p>
+        <p>Home State: <span id="home">Lagos State</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Kasibo David | Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+ 
