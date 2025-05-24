@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: #284b63;
+    background-color: #0b4d8f;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -48,10 +48,10 @@ h1 {
 .navigation a:hover {
     text-decoration: underline;
     transition:  0.3s;
-        color: yellow;
+        color: orange;
 }
 .active{
-        color: yellow;
+        color: orange;
 }
 
 #menu {
@@ -112,7 +112,7 @@ main {
 h2 {
     display: block;
     font-size: 1rem;
-    color: #353535;
+    color:black;
     margin-block-start: 1em;
     unicode-bidi: isolate;
     text-align: center;
@@ -142,13 +142,13 @@ figcaption {
     font-size: 1.2rem;
     font-weight: 700;
     font-style: italic;
-    color: #284b63;
+    color: black;
 }
 
 footer {
     text-align: center;
     font-weight: 400;
-        background-color: #353535;
+        background-color: #0b4d8f;
     font-size: 1.2rem;
     display: block;
     unicode-bidi: isolate;
