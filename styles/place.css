@@ -1,77 +1,60 @@
 :root {
-  --primary-color: #002f6c;
-  --accent-color: #ffffff;
-  --bg-color: #f0f8ff;
-  --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    --primary-color: #002f6c;
+    --secondary-color: #5e7678;
+    --text-color: #f8f8f6;
 
+    --heading-font: 'Kanit', sans-serif;
+    --paragraph-font: 'Rajdhani', sans-serif;
+}
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
 }
-
-body {
-  font-family: var(--font-stack);
-  background-color: var(--bg-color);
-  color: var(--primary-color);
-  line-height: 1.6;
-  padding: 1rem;
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: var(--heading-font);
 }
-
-header, footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-  padding: 1rem;
+h2 {
+    font-family: var(--heading-font);
+    font-size: 30px;
 }
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  margin: 1rem 0;
+.hero {
+    display: flex;
+    justify-content: center;
 }
-
-.weather {
-  margin-top: 1rem;
-  text-align: center;
-  padding: 1rem;
-  background: #e6eef8;
-  border-radius: 8px;
+img {
+    width: 100%;
+    height: auto;
 }
-
-.weather-icon-mobile {
-  width: 50px;
-  display: block;
-  margin-top: 1rem;
+#weather img {
+    max-width: 120px;
 }
-
-/* Pseudo element for large view */
-@media (min-width: 768px) {
-  .weather h2::after {
-    content: " ⛅";
-    font-size: 1.5rem;
-  }
-
-  .weather-icon-mobile {
-    display: none;
-  }
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
 }
-
-.data {
-  margin-top: 1rem;
-  text-align: center;
-  padding: 1rem;
-  background: #e6eef8;
-  border-radius: 8px;
-
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--paragraph-font);
+    gap: 1rem;
+    text-align: right;
 }
-
-/* Pseudo element for large view */
-@media (min-width: 768px) {
-  .data h2::after {
-    font-size: 1.5rem;
-  }
+td:last-child {
+    text-align: left;
+}
+.name {
+    font-weight: 700;
+}
+#data {
+    border-bottom: solid 1px var(--secondary-color);
 }

@@ -1,0 +1,47 @@
+@media screen and (min-width: 700px) {
+    main {
+        position: relative;
+        width: 100%;
+    }
+    #weather img {
+        display: none;
+    }
+    #weather h2::after {
+        content: " 🌤";
+    }
+    #data {
+        position: absolute;
+        left: 1.5em;
+        top: 5em;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        opacity: 0.8;
+        font-size: 20px;
+    }
+    #weather {
+        position: absolute;
+        right: 1.5em;
+        bottom: 3em;
+        margin: 0;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        opacity: 0.8;
+        font-size: 20px;
+    }
+    #data h2 {
+        position: relative;
+        left: -75px;
+        background-color: var(--primary-color);
+        width: 100px;
+        text-align: left;
+        padding: 5px;
+    }
+    #weather h2 {
+        position: relative;
+        left: -30px;
+        background-color: var(--primary-color);
+        width: 170px;
+        text-align: left;
+        padding: 5px;
+    }
+}
