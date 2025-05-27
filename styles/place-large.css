@@ -7,7 +7,7 @@
         display: none;
     }
     #weather h2::after {
-        content: " 🌤";
+        content: "⛅";
     }
     #data {
         position: absolute;
